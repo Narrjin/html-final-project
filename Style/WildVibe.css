@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    background: #f9f9f9;
+    min-width: 200vh;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index :100;
+    background: rgb(28, 28, 28);
+    backdrop-filter: blur(10px);
+}
+.logo{
+    color: #ff4c4c;
+    font-size: 2.2em;
+    pointer-events: none;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, .7);
+}
+.logo2{
+    color: #e8e8e8;
+}
+.nav a{
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 1.2em;
+    padding: 6px 15px;
+    margin: 0 9px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+.nav a:hover,
+.nav a.active{
+    background: #e3e3e3;
+    color: #232323;
+}
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background: url(../WildVibe/skinbg1.jpg)no-repeat; 
+    background-position: center;
+}
+.parallax #text{
+    position: absolute;
+    color: #fbfbfb;
+    font-size: 5em; 
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, .5);
+}
+#text span{
+    color: #ff0000;
+    font-weight: 600;
+}
+.sec{
+    position: relative;
+    background: #ffffff;
+    padding: 150px;
+    text-align: justify;
+}
+.sec p{
+    font-size: 1em;
+    color: rgb(37, 37, 37);
+}
+.third{
+    position: relative;  
+    text-align: center;
+    background: #ffffff;
+    width: 100%;
+}
+.third h1{
+    font-size: 3rem;
+    color: rgb(228, 228, 228);
+    margin-bottom: 90px;
+    font-weight: 600;
+    background-color: #232323;
+}
+.ok,.ok2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%; 
+    background: rgb(255, 255, 255);   
+}
+.ok img,.ok2 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.circle,.cir{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#c2{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(231, 171, 171);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cir p,.circle p,#c2 p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(36, 36, 36);
+}
+#c2 img{
+    width: 450px;
+    height: 450px;
+}
+.circle img:hover,#c2 img:hover,.cir img:hover{
+    transform: scale(1.06);
+    filter: blur(5px);
+}
+.footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    justify-content: space-evenly;  
+    padding: 20px;
+    background: #ffffff;
+    padding-top: 100px;
+}
+.footer h4{
+    padding-bottom: 10px;
+}
+.one p,.two p,.three p{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;;
+}
+.one p:hover,.two p:hover,.three p:hover{
+    text-decoration: underline;
+}
+.footer a{
+    text-decoration: none;
+    color: #151515;
+}
+.footer2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #ffffff;
+}

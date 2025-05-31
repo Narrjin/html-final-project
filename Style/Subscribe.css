@@ -1,0 +1,157 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+body{
+    background: url(../WildVibe/skinbg1.jpg)no-repeat;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index :100;
+    background: rgb(28, 28, 28);
+    backdrop-filter: blur(10px);
+}
+.logo{
+    color: #ff4c4c;
+    font-size: 2.2em;
+    pointer-events: none;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, .7);
+}
+.logo2{
+    color: #e8e8e8;
+}
+.nav a{
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 1.2em;
+    padding: 6px 15px;
+    margin: 0 9px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+.nav a:hover,
+.nav a#active{
+    background: #e3e3e3;
+    color: #232323;
+}
+.container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    padding-bottom: 70px;
+}
+.container form{
+    padding: 20px;
+    width: 700px;
+    background: rgb(235, 235, 235);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col{
+    flex: 1 1 250px;
+}
+.container form .row .col .tile{
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.container form .row .col .inputbox{
+    margin: 15px 0;
+}
+
+.container form .row .col .inputbox span{
+    margin-bottom:10px;
+    display: block;
+}
+.container form .row .col .inputbox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+.container form .row .col .inputbox input:focus{
+    border: 1px solid #000000;
+}
+.container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+.container form .row .col .flex .inputbox{
+    margin-top: 5px;
+}
+
+.container form .row .col .inputbox img{
+   height: 34px;
+   margin-top: 5px;
+}
+.container form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background:#ff4c4c;
+    color: #f1f1f1;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.container form .submit-btn:hover{
+    background:#d13c3c;
+}
+
+.footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    justify-content: space-evenly;  
+    padding: 20px;
+    background: #000000;
+    padding-top: 100px;
+    color: #ccc;
+}
+.footer h4{
+    padding-bottom: 10px;
+}
+.one p,.two p,.three p{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;;
+}
+.one p:hover,.two p:hover,.three p:hover{
+    text-decoration: underline;
+}
+.footer a{
+    text-decoration: none;
+    color: #ccc;
+}
+.footer2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #101010;
+    color: #ccc;
+}
